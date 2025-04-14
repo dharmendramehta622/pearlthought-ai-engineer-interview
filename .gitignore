@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# MyPy
+.mypy_cache/
+
+# Pyre type checker
+.pyre/
+
+# PyLint
+pylint-report.txt
+
+# Bandit security scanner
+bandit-report.json
+
+# FastAPI / Swagger UI
+*.log
+
+# VS Code
+.vscode/
+
+# macOS / Linux / Windows
+.DS_Store
+Thumbs.db
+
+# Docker
+**/__pycache__/
+*.log
+*.pid
+*.sqlite3
+*.db
+docker-compose.override.yml
+
+# Entry script or other executables
+*.sh
+
+# Jupyter Notebooks (if used for testing)
+.ipynb_checkpoints/

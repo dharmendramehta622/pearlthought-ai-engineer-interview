@@ -1,0 +1,33 @@
+ We have listed five assessments in the document https://coda.io/d/_d5NoJU6U1Sn/Introduction_suBlcgnW
+ Please choose any one of them, complete the task, and share your results using the provided form. Submission Requirements: 
+ 
+ A GitHub repository containing your code (maximum 25 lines). 
+ 
+ A Loom video explaining your code and thought process. 
+ 
+ Kindly ensure your submission is clear and concise. Let us know if you have any questions.
+
+
+
+ #### Perspective-Driven Content Generation
+
+Task: Implement an AI service that generates LinkedIn posts reflecting the client physician's perspective on healthcare AI topics.
+
+Specific Requirements:
+
+1. Use Azure OpenAI Service, Google Vertex AI, or AWS Bedrock (managed AI services)
+2. Create a function that:
+  * Takes an article summary/URL as input
+  * Applies supplied perspective statements (we'll provide 5-7 key viewpoints)
+  * Generates a LinkedIn post (200-250 words) reflecting the client's "AI as enabler" philosophy
+3. Implement prompt engineering techniques to maintain consistent tone and perspective
+4. Include a confidence score indicating alignment with the client's views
+
+Deliverables:
+
+* Working API that accepts article information and returns generated content
+* Code for the prompt engineering approach
+* 3 sample outputs for provided test articles
+* Brief explanation of design decisions and limitations
+
+Evaluation Focus: Effective prompt engineering, perspective alignment, managed AI service implementation
