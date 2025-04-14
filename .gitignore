@@ -69,10 +69,7 @@ Thumbs.db
 *.pid
 *.sqlite3
 *.db
-docker-compose.override.yml
-
-# Entry script or other executables
-*.sh
+docker-compose.override.yml 
 
 # Jupyter Notebooks (if used for testing)
 .ipynb_checkpoints/
