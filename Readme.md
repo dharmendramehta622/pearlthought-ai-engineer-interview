@@ -1,126 +1,106 @@
+
+---
+
+```markdown
 <p align="center">
   <a href="https://fastapi.tiangolo.com"><img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI"></a>
 </p>
 <p align="center">
     <em>FastAPI framework, high performance, easy to learn, fast to code, ready for production</em>
 </p>
-<p align="center">
-<a href="https://github.com/fastapi/fastapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster" target="_blank">
-    <img src="https://github.com/fastapi/fastapi/actions/workflows/test.yml/badge.svg?event=push&branch=master" alt="Test">
-</a>
-<a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapi/fastapi" target="_blank">
-    <img src="https://coverage-badge.samuelcolvin.workers.dev/fastapi/fastapi.svg" alt="Coverage">
-</a>
-<a href="https://pypi.org/project/fastapi" target="_blank">
-    <img src="https://img.shields.io/pypi/v/fastapi?color=%2334D058&label=pypi%20package" alt="Package version">
-</a>
-<a href="https://pypi.org/project/fastapi" target="_blank">
-    <img src="https://img.shields.io/pypi/pyversions/fastapi.svg?color=%2334D058" alt="Supported Python versions">
-</a>
-</p>
 
 ---
 
-**Documentation**: <a href="https://fastapi.tiangolo.com" target="_blank">https://fastapi.tiangolo.com</a>
+# 💡 Perspective-Driven Content Generation
 
-**Source Code**: <a href="https://github.com/fastapi/fastapi" target="_blank">https://github.com/fastapi/fastapi</a>
+This project implements an AI-powered service to generate **LinkedIn posts** for physicians that reflect their perspectives on healthcare AI topics. Built using **FastAPI** and integrated with **Google Vertex AI** (managed LLM service), the solution showcases prompt engineering and model alignment capabilities.
+
+## 📌 Problem Statement
+
+Develop an API that:
+- Accepts an article summary or URL.
+- Applies client-provided perspective statements.
+- Generates a 200–250 word LinkedIn post reflecting a consistent tone: _“AI as enabler”_.
+- Outputs a confidence score for alignment with the physician’s views.
 
 ---
 
-FastAPI is a modern, fast (high-performance), web framework for building APIs with Python based on standard Python type hints.
+## 🚀 Features
 
-The key features are:
+- ⚡ FastAPI backend for serving the model.
+- 🔐 Google Vertex AI for text generation.
+- 🧠 Prompt engineering layer for tone & viewpoint control.
+- 📊 Confidence scoring system.
+- 🧪 Includes 3 sample article tests.
 
-* **Fast**: Very high performance, on par with **NodeJS** and **Go** (thanks to Starlette and Pydantic). [One of the fastest Python frameworks available](#performance).
-* **Fast to code**: Increase the speed to develop features by about 200% to 300%. *
-* **Fewer bugs**: Reduce about 40% of human (developer) induced errors. *
-* **Intuitive**: Great editor support. <abbr title="also known as auto-complete, autocompletion, IntelliSense">Completion</abbr> everywhere. Less time debugging.
-* **Easy**: Designed to be easy to use and learn. Less time reading docs.
-* **Short**: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
-* **Robust**: Get production-ready code. With automatic interactive documentation.
-* **Standards-based**: Based on (and fully compatible with) the open standards for APIs: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> (previously known as Swagger) and <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.
+---
 
-<small>* estimation based on tests on an internal development team, building production applications.</small>
- 
-## Requirements
+## 🛠 Requirements
 
-FastAPI stands on the shoulders of giants:
+### Dependencies
+Install with:
 
-* <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> for the web parts.
-* <a href="https://docs.pydantic.dev/" class="external-link" target="_blank">Pydantic</a> for the data parts.
-
-## Installation
-
-Create and activate a <a href="https://fastapi.tiangolo.com/virtual-environments/" class="external-link" target="_blank">virtual environment</a> and then install FastAPI:
-
-<div class="termy">
-
-```console
-$ pip install -r requirements.txt
-
----> 100%
+```bash
+pip install -r requirements.txt
 ```
 
-</div>
- 
- 
-## Dependencies
+### Environment Setup
 
-Before running the project, please follow these steps to set up your environment:
+Generate and export your Google API key:
 
-**Generate API Key**  
-   Visit [Google AI Studio](https://aistudio.google.com/app/apikey) to create your API key.
+```bash
+export GOOGLE_API_KEY=your_api_key_here
+```
 
-**Set Environment Variable**  
-   Set the environment variable for your API key:
-   ```bash
-   export GOOGLE_API_KEY=your_api_key_here
-   ```
+Make the shell script executable:
 
-**Make `entryPoint.sh` Executable**  
-   Change the permissions to make the shell script executable:
-   ```bash
-   chmod +x entryPoint.sh
-   ```
+```bash
+chmod +x entryPoint.sh
+```
+
 ---
 
-### 🚀 Running the Server
+## ▶️ Running the Server
 
-Once the above steps are complete, you can start the server:
+Start the server:
 
 ```bash
 ./entryPoint.sh
 ```
 
-Run the server with:
+This uses:
 
-<div class="termy">
-
-```console
-$ fastapi dev main.py
-
- ╭────────── FastAPI CLI - Development mode ───────────╮
- │                                                     │
- │  Serving at: http://127.0.0.1:8000                  │
- │                                                     │
- │  API docs: http://127.0.0.1:8000/docs               │
- │                                                     │
- │  Running in development mode, for production use:   │
- │                                                     │
- │  fastapi run                                        │
- │                                                     │
- ╰─────────────────────────────────────────────────────╯
-
-INFO:     Will watch for changes in these directories: ['/home/user/code/awesomeapp']
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [2248755] using WatchFiles
-INFO:     Started server process [2248757]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
+```bash
+fastapi dev main.py
 ```
-</div>
 
+Access the docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-## License
+---
 
-This project is licensed under the terms of the MIT license.
+## 📂 Deliverables
+
+- ✅ Working API (FastAPI + Vertex AI)
+- ✅ Prompt Engineering Code (inside `services/prompt_engineering.py`)
+- ✅ Confidence Score Logic (inside `utils/scoring.py`)
+- ✅ 3 Sample Outputs (see `samples/`)
+- ✅ Loom Video (link in submission)
+- ✅ GitHub Repo (code under 25 lines)
+
+---
+
+## 📌 Notes
+
+- The API is stateless and designed for easy deployment.
+- Designed with flexibility for multi-LLM provider integration (Vertex AI used here).
+- Limitations: Alignment is heuristic-based; could be improved with fine-tuning or RAG.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+```
+
+--- 
