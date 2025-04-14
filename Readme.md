@@ -81,8 +81,8 @@ Access the docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 ## 📂 Deliverables
 
 - ✅ Working API (FastAPI + Vertex AI)
-- ✅ Prompt Engineering Code (inside `services/prompt_engineering.py`)
-- ✅ Confidence Score Logic (inside `utils/scoring.py`)
+- ✅ Prompt Engineering Code (inside `genai_services/_prompt_generator.py`)
+- ✅ Confidence Score Logic (inside `genai_services/_prompt_generator.py`)
 - ✅ 3 Sample Outputs (see `samples/`)
 - ✅ Loom Video (link in submission)
 - ✅ GitHub Repo (code under 25 lines)
